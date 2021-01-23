@@ -31,7 +31,7 @@ setup(
     long_description=readme,
     packages=find_packages(exclude=["tests*"]),
     include_package_data=True,
-    install_requires=["tutor-openedx"],
+    install_requires=["tutor-openedx<10.0.0"],
     python_requires=">=3.5",
     entry_points={"tutor.plugin.v0": ["figures = tutorfigures.plugin"]},
     classifiers=[
@@ -43,5 +43,8 @@ setup(
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
     ],
 )
